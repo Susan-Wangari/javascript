@@ -25,3 +25,10 @@ const isEmailVerified = true;
 const username = isEmailVerified && response || "guest";
 
 console.log(username);
+
+
+//parentheses make precedence over other operators
+//code in brackets is executed first
+const username = isEmailVerified && (response || "guest");
+
+console.log(username);
